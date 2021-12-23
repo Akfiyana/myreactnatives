@@ -1,112 +1,57 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
+import React, { Component } from 'react';
+import {View, Text } from 'react-native';
 
-import React from 'react';
-import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+class App extends Component {
+  render (){
+    return(
+      <View style={{flex:1, borderWidth:4, borderColor:'#547ec9'}}>
+        <View style={{flex:1, flexDirection:'row'}}>
+          <View style={{flex:1,backgroundColor:'#f5f5f5', borderRightWidth:4, borderRightColor:'#e8c779'}}>
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+          </View>
+          <View style={{flex:1,backgroundColor:'#fff1cc', borderRightWidth:4, borderRightColor:'#7bb974'}}>
 
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
+          </View>
+          <View style={{flex:1,backgroundColor:'#d0e9d5', borderRightWidth:4, borderRightColor:'#6998c1'}}>
 
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+          </View>
+          <View style={{flex:1,backgroundColor:'#d6e9fc', borderRightWidth:4, borderRightColor:'#cc7c7f'}}>
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+          </View>
+          <View style={{flex:1,backgroundColor:'#ffccca'}}>
 
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+          </View>
+
         </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
+        <View style={{flex:6,flexDirection:"row"}}>
+          <View style={{flex:3,backgroundColor:'#f0006a', borderRightWidth:4, borderRightColor:'#bc850a', borderTopWidth:4, borderTopColor:'#ca0047'}}>
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+          </View>
+          <View style={{flex:2,backgroundColor:'#ebc705', borderTopWidth:4, borderTopColor:'#c8a401'}}>
+            
+          </View>
+        </View>
+        <View style={{flex: 1, flexDirection:'row'}}>
+          <View style={{flex:1,backgroundColor:'#ffccca', borderRightWidth:4, borderRightColor:'#82aad1', borderTopWidth:4, borderTopColor:'#da7673'}}>
 
-export default App;
+          </View>
+          <View style={{flex:1,backgroundColor:'#d6e9fc', borderRightWidth:4, borderRightColor:'#7bb974', borderTopWidth:4, borderTopColor:'#85acd2'}}>
+
+          </View>
+          <View style={{flex:1,backgroundColor:'#d0e9d5', borderRightWidth:4, borderRightColor:'#ddba61', borderTopWidth:4, borderTopColor:'#90c58c'}}>
+
+          </View>
+          <View style={{flex:1,backgroundColor:'#fff1cc', borderRightWidth:4, borderRightColor:'#949084', borderTopWidth:4, borderTopColor:'#ceb242'}}>
+
+          </View>
+          <View style={{flex:1,backgroundColor:'#f5f5f5',borderTopWidth:4, borderTopColor:'#ceb242'}}>
+           
+
+          </View>
+
+        </View>
+      </View>
+    )
+  }
+}
+  export default App;
